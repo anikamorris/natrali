@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WebKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -15,6 +16,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let video = Video(key: "OARVLvQx6OM", title: "NATURAL FALL MODEL MAKEUP for acne + textured skin")
+        videos.append(video)
+        
+        let video2 = Video(key: "wcxzcwNUP8E", title: "Makeup For Finessers!!! \"No Makeup Makeup\" Tutorial")
+        videos.append(video2)
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

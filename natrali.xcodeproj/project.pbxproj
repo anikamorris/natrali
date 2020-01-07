@@ -14,6 +14,8 @@
 		CFD7E04D23C3BCFF0018E30E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD7E04C23C3BCFF0018E30E /* Assets.xcassets */; };
 		CFD7E05023C3BCFF0018E30E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD7E04E23C3BCFF0018E30E /* LaunchScreen.storyboard */; };
 		CFD7E05823C3D1BF0018E30E /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD7E05723C3D1BF0018E30E /* VideoTableViewCell.swift */; };
+		CFD7E05A23C3FCBB0018E30E /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD7E05923C3FCBB0018E30E /* CategoryViewController.swift */; };
+		CFD7E05C23C3FD280018E30E /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD7E05B23C3FD280018E30E /* VideoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		CFD7E04F23C3BCFF0018E30E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFD7E05123C3BCFF0018E30E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFD7E05723C3D1BF0018E30E /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		CFD7E05923C3FCBB0018E30E /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		CFD7E05B23C3FD280018E30E /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				CFD7E05123C3BCFF0018E30E /* Info.plist */,
 				CFD7E04923C3BCFB0018E30E /* natrali.xcdatamodeld */,
 				CFD7E05723C3D1BF0018E30E /* VideoTableViewCell.swift */,
+				CFD7E05923C3FCBB0018E30E /* CategoryViewController.swift */,
+				CFD7E05B23C3FD280018E30E /* VideoViewController.swift */,
 			);
 			path = natrali;
 			sourceTree = "<group>";
@@ -141,7 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFD7E05A23C3FCBB0018E30E /* CategoryViewController.swift in Sources */,
 				CFD7E04523C3BCFB0018E30E /* ViewController.swift in Sources */,
+				CFD7E05C23C3FD280018E30E /* VideoViewController.swift in Sources */,
 				CFD7E05823C3D1BF0018E30E /* VideoTableViewCell.swift in Sources */,
 				CFD7E04B23C3BCFB0018E30E /* natrali.xcdatamodeld in Sources */,
 				CFD7E04323C3BCFB0018E30E /* AppDelegate.swift in Sources */,
