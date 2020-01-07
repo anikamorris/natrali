@@ -23,7 +23,7 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryTableViewCell", for: indexPath) as! CategoryTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryTableViewCellCell", for: indexPath) as! CategoryTableViewCell
         
         cell.categoryLabel.text = categories[indexPath.row]
         
