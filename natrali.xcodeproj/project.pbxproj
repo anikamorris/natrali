@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CFB023F023C4026300A151BB /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB023EF23C4026300A151BB /* CategoryTableViewCell.swift */; };
+		CFB023F423C403E800A151BB /* UIImage+downloaded.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB023F323C403E800A151BB /* UIImage+downloaded.swift */; };
+		CFB023F623C423A100A151BB /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB023F523C423A100A151BB /* CategoryTableViewController.swift */; };
 		CFD7E04323C3BCFB0018E30E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD7E04223C3BCFB0018E30E /* AppDelegate.swift */; };
-		CFD7E04523C3BCFB0018E30E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD7E04423C3BCFB0018E30E /* ViewController.swift */; };
+		CFD7E04523C3BCFB0018E30E /* DisplayVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD7E04423C3BCFB0018E30E /* DisplayVideosViewController.swift */; };
 		CFD7E04823C3BCFB0018E30E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD7E04623C3BCFB0018E30E /* Main.storyboard */; };
 		CFD7E04B23C3BCFB0018E30E /* natrali.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFD7E04923C3BCFB0018E30E /* natrali.xcdatamodeld */; };
 		CFD7E04D23C3BCFF0018E30E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD7E04C23C3BCFF0018E30E /* Assets.xcassets */; };
@@ -19,9 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CFB023EF23C4026300A151BB /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		CFB023F323C403E800A151BB /* UIImage+downloaded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+downloaded.swift"; sourceTree = "<group>"; };
+		CFB023F523C423A100A151BB /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		CFD7E03F23C3BCFB0018E30E /* natrali.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = natrali.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD7E04223C3BCFB0018E30E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CFD7E04423C3BCFB0018E30E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFD7E04423C3BCFB0018E30E /* DisplayVideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayVideosViewController.swift; sourceTree = "<group>"; };
 		CFD7E04723C3BCFB0018E30E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFD7E04A23C3BCFB0018E30E /* natrali.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = natrali.xcdatamodel; sourceTree = "<group>"; };
 		CFD7E04C23C3BCFF0018E30E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,6 +49,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CFB023EE23C4023600A151BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFD7E05723C3D1BF0018E30E /* VideoTableViewCell.swift */,
+				CFB023EF23C4026300A151BB /* CategoryTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CFB023F123C4037600A151BB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CFD7E05923C3FCBB0018E30E /* CategoryViewController.swift */,
+				CFD7E04423C3BCFB0018E30E /* DisplayVideosViewController.swift */,
+				CFD7E05B23C3FD280018E30E /* VideoViewController.swift */,
+				CFB023F523C423A100A151BB /* CategoryTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CFB023F223C403A700A151BB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CFB023F323C403E800A151BB /* UIImage+downloaded.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CFD7E03623C3BCFB0018E30E = {
 			isa = PBXGroup;
 			children = (
@@ -62,16 +96,15 @@
 		CFD7E04123C3BCFB0018E30E /* natrali */ = {
 			isa = PBXGroup;
 			children = (
+				CFB023F123C4037600A151BB /* View Controllers */,
+				CFB023EE23C4023600A151BB /* Views */,
+				CFB023F223C403A700A151BB /* Extensions */,
 				CFD7E04223C3BCFB0018E30E /* AppDelegate.swift */,
-				CFD7E04423C3BCFB0018E30E /* ViewController.swift */,
 				CFD7E04623C3BCFB0018E30E /* Main.storyboard */,
 				CFD7E04C23C3BCFF0018E30E /* Assets.xcassets */,
 				CFD7E04E23C3BCFF0018E30E /* LaunchScreen.storyboard */,
 				CFD7E05123C3BCFF0018E30E /* Info.plist */,
 				CFD7E04923C3BCFB0018E30E /* natrali.xcdatamodeld */,
-				CFD7E05723C3D1BF0018E30E /* VideoTableViewCell.swift */,
-				CFD7E05923C3FCBB0018E30E /* CategoryViewController.swift */,
-				CFD7E05B23C3FD280018E30E /* VideoViewController.swift */,
 			);
 			path = natrali;
 			sourceTree = "<group>";
@@ -147,10 +180,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFB023F423C403E800A151BB /* UIImage+downloaded.swift in Sources */,
 				CFD7E05A23C3FCBB0018E30E /* CategoryViewController.swift in Sources */,
-				CFD7E04523C3BCFB0018E30E /* ViewController.swift in Sources */,
+				CFD7E04523C3BCFB0018E30E /* DisplayVideosViewController.swift in Sources */,
 				CFD7E05C23C3FD280018E30E /* VideoViewController.swift in Sources */,
 				CFD7E05823C3D1BF0018E30E /* VideoTableViewCell.swift in Sources */,
+				CFB023F623C423A100A151BB /* CategoryTableViewController.swift in Sources */,
+				CFB023F023C4026300A151BB /* CategoryTableViewCell.swift in Sources */,
 				CFD7E04B23C3BCFB0018E30E /* natrali.xcdatamodeld in Sources */,
 				CFD7E04323C3BCFB0018E30E /* AppDelegate.swift in Sources */,
 			);
