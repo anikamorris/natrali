@@ -12,7 +12,24 @@ import WebKit
 
 class VideoViewController: UIViewController {
     
+    var video:Video = Video()
+    
+    @IBOutlet weak var videoWebView: WKWebView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var creatorLabel: UILabel!
+    @IBOutlet weak var ratingLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        titleLabel.text = video.title
+        getVideo(withVideoKey: video.key)
+    }
+    
+    func getVideo(withVideoKey: String) {
+        
+        let url = URL(string: "https://www.youtube.com/embed/\(withVideoKey)")
+        videoWebView.load(URLRequest(url: url!))
+        
     }
 }

@@ -12,17 +12,13 @@ import WebKit
 class DisplayVideosViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var videos:[Video] = []
+    var category:String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let video = Video(key: "OARVLvQx6OM", title: "NATURAL FALL MODEL MAKEUP for acne + textured skin")
-        videos.append(video)
-        
-        let video2 = Video(key: "wcxzcwNUP8E", title: "Makeup For Finessers!!! \"No Makeup Makeup\" Tutorial")
-        videos.append(video2)
-        
+        setVideosByCategory()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,9 +36,54 @@ class DisplayVideosViewController: UIViewController, UITableViewDelegate, UITabl
         return cell
     }
     
-    struct Video {
-        var key:String = ""
-        var title:String = ""
+    func setVideosByCategory() {
+        
+        if self.category == "Full face tutorials" {
+            
+            let video = Video(key: "Yi_ZHBpKmvE", title: "The Best Makeup for Work/School/Everyday")
+            videos.append(video)
+            
+            let video2 = Video(key: "xZuytMLbRDE", title: "QUICK & EASY 5 MINUTE MAKEUP TUTORIAL!")
+            videos.append(video2)
+            
+        } else if self.category == "Complexion" {
+            
+            let video = Video(key: "OARVLvQx6OM", title: "NATURAL FALL MODEL MAKEUP for acne + textured skin")
+            videos.append(video)
+            
+            let video2 = Video(key: "wcxzcwNUP8E", title: "Makeup For Finessers!!! \"No Makeup Makeup\" Tutorial")
+            videos.append(video2)
+            
+        } else if self.category == "Eyes" {
+            
+            let video = Video(key: "W4W-4VL1ABU", title: "How to Apply Eyeshadow PERFECTLY (beginner friendly hacks)")
+            videos.append(video)
+            
+            let video2 = Video(key: "pPqySxcuSbo", title: "Beginner Eye Makeup Tips & Tricks")
+            videos.append(video2)
+            
+        } else if self.category == "Brows" {
+            
+            let video = Video(key: "cjdtysezq5w", title: "How to Fill in Your Eyebrows for Beginners")
+            videos.append(video)
+            
+            let video2 = Video(key: "cmhSam6L3lU", title: "Natural Looking Eyebrow Tutorial - Microblade Effect")
+            videos.append(video2)
+            
+        } else if self.category == "Lips" {
+            
+            let video = Video(key: "MyK2d8s07YQ", title: "How To Choose The Perfect Nude Lipstick")
+            videos.append(video)
+            
+            let video2 = Video(key: "rh1utMY2u88", title: "LIP PREP, HOW TO PICK YOUR LIP COLOR & HOW TO DO A OMBRE LIP")
+            videos.append(video2)
+            
+        }
     }
 
+}
+
+struct Video {
+    var key:String = ""
+    var title:String = ""
 }

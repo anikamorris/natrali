@@ -12,9 +12,10 @@ import UIKit
 class CategoryTableViewController: UITableViewController {
     
     var categories:[String] = ["Full face tutorials", "Complexion", "Eyes", "Brows", "Lips"]
+    var category:String = ""
     
     override func viewDidLoad() {
-
+        super.viewDidLoad()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -22,17 +23,32 @@ class CategoryTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // TODO figure out why cell isn't conforming to CategoryTableViewCell
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryTableViewCell", for: indexPath) as! CategoryTableViewCell
         
-        // cell.categoryLabel.text = categories[indexPath.row]
         if let category = cell.categoryLabel {
             category.text = categories[indexPath.row]
         } else {
             return cell
         }
-        // cell.categoryLabel.text = "Category"
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let category = categories[indexPath.row]
+        self.category = category
+        
+        performSegue(withIdentifier: "toAllVideos", sender: nil)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "toAllVideos" {
+            let vc = segue.destination as! DisplayVideosViewController
+            vc.category = self.category
+        }
     }
 }
