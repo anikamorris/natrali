@@ -19,6 +19,7 @@
 		CFD7E05823C3D1BF0018E30E /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD7E05723C3D1BF0018E30E /* VideoTableViewCell.swift */; };
 		CFD7E05A23C3FCBB0018E30E /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD7E05923C3FCBB0018E30E /* CategoryViewController.swift */; };
 		CFD7E05C23C3FD280018E30E /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD7E05B23C3FD280018E30E /* VideoViewController.swift */; };
+		CFDA491523C68939005C7493 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDA491423C68938005C7493 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		CFD7E05723C3D1BF0018E30E /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		CFD7E05923C3FCBB0018E30E /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		CFD7E05B23C3FD280018E30E /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		CFDA491423C68938005C7493 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFDA491523C68939005C7493 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +85,7 @@
 			children = (
 				CFD7E04123C3BCFB0018E30E /* natrali */,
 				CFD7E04023C3BCFB0018E30E /* Products */,
+				CFDA491323C68938005C7493 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +111,14 @@
 				CFD7E04923C3BCFB0018E30E /* natrali.xcdatamodeld */,
 			);
 			path = natrali;
+			sourceTree = "<group>";
+		};
+		CFDA491323C68938005C7493 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFDA491423C68938005C7493 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

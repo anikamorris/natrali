@@ -13,6 +13,7 @@ class DisplayVideosViewController: UIViewController, UITableViewDelegate, UITabl
 
     var videos:[Video] = []
     var category:String = ""
+    var video:Video = Video()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,7 @@ class DisplayVideosViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "VideoTableViewCell", for: indexPath) as! VideoTableViewCell
         
         cell.videoTitle.text = videos[indexPath.row].title
@@ -34,6 +36,22 @@ class DisplayVideosViewController: UIViewController, UITableViewDelegate, UITabl
         cell.videoImage.downloaded(from: url)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let video = videos[indexPath.row]
+        self.video = video
+        
+        performSegue(withIdentifier: "toVideo", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "toVideo" {
+            let vc = segue.destination as! VideoViewController
+            vc.video = self.video
+        }
     }
     
     func setVideosByCategory() {
@@ -80,7 +98,6 @@ class DisplayVideosViewController: UIViewController, UITableViewDelegate, UITabl
             
         }
     }
-
 }
 
 struct Video {
