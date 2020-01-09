@@ -180,9 +180,9 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="97% would watch again" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3a6-mY-JUt">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recommended Products" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3a6-mY-JUt">
                                         <rect key="frame" x="0.0" y="82.5" width="374" height="17.5"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -193,20 +193,29 @@
                                     <constraint firstItem="3a6-mY-JUt" firstAttribute="height" secondItem="XlS-t8-faa" secondAttribute="height" id="aRl-4c-A1w"/>
                                 </constraints>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vun-wr-blq">
+                                <rect key="frame" x="0.0" y="478" width="414" height="384"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="vun-wr-blq" firstAttribute="top" secondItem="maW-dn-gl2" secondAttribute="bottom" constant="20" id="A9P-V9-IYY"/>
                             <constraint firstItem="XRQ-SJ-b2e" firstAttribute="trailing" secondItem="zsM-kb-p3o" secondAttribute="trailing" id="GZ1-g3-bju"/>
+                            <constraint firstItem="zsM-kb-p3o" firstAttribute="bottom" secondItem="vun-wr-blq" secondAttribute="bottom" id="LBV-pi-P8C"/>
                             <constraint firstItem="maW-dn-gl2" firstAttribute="top" secondItem="XRQ-SJ-b2e" secondAttribute="bottom" constant="20" id="Laq-HL-TEB"/>
                             <constraint firstItem="zsM-kb-p3o" firstAttribute="trailing" secondItem="maW-dn-gl2" secondAttribute="trailing" constant="20" id="OFC-68-RPw"/>
                             <constraint firstItem="XRQ-SJ-b2e" firstAttribute="leading" secondItem="zsM-kb-p3o" secondAttribute="leading" id="WiC-W1-tip"/>
                             <constraint firstItem="XRQ-SJ-b2e" firstAttribute="top" secondItem="zsM-kb-p3o" secondAttribute="top" id="jn5-6n-agW"/>
+                            <constraint firstItem="vun-wr-blq" firstAttribute="leading" secondItem="zsM-kb-p3o" secondAttribute="leading" id="nF9-FI-DjP"/>
                             <constraint firstItem="maW-dn-gl2" firstAttribute="leading" secondItem="zsM-kb-p3o" secondAttribute="leading" constant="20" id="sPP-9p-P9Y"/>
+                            <constraint firstItem="vun-wr-blq" firstAttribute="trailing" secondItem="zsM-kb-p3o" secondAttribute="trailing" id="vAP-Ww-pBO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zsM-kb-p3o"/>
                     </view>
                     <connections>
                         <outlet property="creatorLabel" destination="N8u-5u-p2D" id="jeU-93-JFi"/>
+                        <outlet property="productView" destination="vun-wr-blq" id="hzx-g8-AbQ"/>
                         <outlet property="ratingLabel" destination="3a6-mY-JUt" id="Bba-c4-oQH"/>
                         <outlet property="titleLabel" destination="XlS-t8-faa" id="w3D-YC-Bt6"/>
                         <outlet property="videoWebView" destination="XRQ-SJ-b2e" id="TtM-qb-XGc"/>
