@@ -59,19 +59,25 @@ class DisplayVideosViewController: UIViewController, UITableViewDelegate, UITabl
         
         if self.category == "Full Face Tutorials" {
             
-            let video = Video(key: "Yi_ZHBpKmvE", title: "The Best Makeup for Everyday")
+            let video = Video(key: "Yi_ZHBpKmvE", title: "The Best Makeup for School/Work/Everyday")
             videos.append(video)
             
             let video2 = Video(key: "xZuytMLbRDE", title: "Quick & Easy 5 Min Makeup")
             videos.append(video2)
+            
+            let video3 = Video(key: "wcxzcwNUP8E", title: "\"No Makeup Makeup\" Tutorial")
+            videos.append(video3)
             
         } else if self.category == "Complexion" {
             
             let video = Video(key: "OARVLvQx6OM", title: "Natural Fall Makeup for Textured Skin")
             videos.append(video)
             
-            let video2 = Video(key: "wcxzcwNUP8E", title: "\"No Makeup Makeup\" Tutorial")
+            let video2 = Video(key: "VXQTOtLVTDI", title: "Flawless + Natural Glowy Skin")
             videos.append(video2)
+            
+            let video3 = Video(key: "WSuTOpPG6I0", title: "How to Apply Bronzer Like a Pro")
+            videos.append(video3)
             
         } else if self.category == "Eyes" {
             
@@ -81,6 +87,9 @@ class DisplayVideosViewController: UIViewController, UITableViewDelegate, UITabl
             let video2 = Video(key: "pPqySxcuSbo", title: "Beginner Eye Makeup Tips & Tricks")
             videos.append(video2)
             
+            let video3 = Video(key: "TfxJCQfcMkk", title: "How To: Apply Mascara For Beginners")
+            videos.append(video3)
+            
         } else if self.category == "Brows" {
             
             let video = Video(key: "cjdtysezq5w", title: "How to Fill in Your Eyebrows for Beginners")
@@ -89,6 +98,9 @@ class DisplayVideosViewController: UIViewController, UITableViewDelegate, UITabl
             let video2 = Video(key: "cmhSam6L3lU", title: "Natural Looking Eyebrow Tutorial")
             videos.append(video2)
             
+            let video3 = Video(key: "tsnwUG6glEU", title: "Brow Tips You Need to Know")
+            videos.append(video3)
+            
         } else if self.category == "Lips" {
             
             let video = Video(key: "MyK2d8s07YQ", title: "How To Choose The Perfect Nude Lipstick")
@@ -96,6 +108,9 @@ class DisplayVideosViewController: UIViewController, UITableViewDelegate, UITabl
             
             let video2 = Video(key: "rh1utMY2u88", title: "Lip Prep & How To Pick Your Lip Color")
             videos.append(video2)
+            
+            let video3 = Video(key: "7OCes9Eubxs", title: "One Lipstick, Many Ways to Wear it!")
+            videos.append(video3)
             
         }
     }

@@ -11,7 +11,7 @@ import UIKit
 
 class CategoryTableViewController: UITableViewController {
     
-    var categories:[String] = ["Full Face Tutorials", "Complexion", "Eyes", "Brows", "Lips"]
+    var categories:[String] = ["Complexion", "Eyes", "Brows", "Lips", "Full Face Tutorials"]
     var category:String = ""
     
     override func viewDidLoad() {
