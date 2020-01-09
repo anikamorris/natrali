@@ -100,6 +100,7 @@
 		CFD7E04123C3BCFB0018E30E /* natrali */ = {
 			isa = PBXGroup;
 			children = (
+				CFDA491623C7B64A005C7493 /* New Group */,
 				CFB023F123C4037600A151BB /* View Controllers */,
 				CFB023EE23C4023600A151BB /* Views */,
 				CFB023F223C403A700A151BB /* Extensions */,
@@ -119,6 +120,13 @@
 				CFDA491423C68938005C7493 /* WebKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFDA491623C7B64A005C7493 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

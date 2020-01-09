@@ -119,4 +119,5 @@ class DisplayVideosViewController: UIViewController, UITableViewDelegate, UITabl
 struct Video {
     var key:String = ""
     var title:String = ""
+    
 }
