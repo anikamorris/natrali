@@ -10,4 +10,4 @@ Requirements:
 - Xcode 10+
 - Swift 5+
 
-Simply download this repo and compile in Xcode. TestFlight link coming soon!
+Simply download this repo and unzip the file, then compile in Xcode. TestFlight link coming soon!
