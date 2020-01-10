@@ -13,7 +13,7 @@ Be your best self, *natrali*.
 
   <img width="233" alt="Video and recommended products" src="https://user-images.githubusercontent.com/29615757/72180254-9de1f480-339b-11ea-82dc-f1fffb288944.png">
 </p>
----
+
 
 ## Installation
 Requirements:
