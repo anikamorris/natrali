@@ -28,6 +28,15 @@ class ProductCell: UICollectionViewCell {
         return productImage
     }()
     
+    var titleLabel:UILabel = {
+        let label = UILabel(frame: CGRect(x:100, y: 30, width: UIScreen.main.bounds.width , height: 40))
+        label.textAlignment = .left
+        label.lineBreakMode = .byWordWrapping
+        label.numberOfLines = 0
+        label.font = UIFont(name: "Futura", size: 17)
+        return label
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -35,8 +44,11 @@ class ProductCell: UICollectionViewCell {
         bg.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
         bg.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
         bg.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
-        bg.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
+        bg.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -50).isActive = true
         
+        self.addSubview(self.titleLabel)
+//        let constraints:NSLayoutConstraint = NSLayoutConstraint(item: <#T##Any#>, attribute: <#T##NSLayoutConstraint.Attribute#>, relatedBy: <#T##NSLayoutConstraint.Relation#>, toItem: <#T##Any?#>, attribute: <#T##NSLayoutConstraint.Attribute#>, multiplier: <#T##CGFloat#>, constant: <#T##CGFloat#>)
+//        self.titleLabel.addConstraints(<#T##constraints: [NSLayoutConstraint]##[NSLayoutConstraint]#>)
     }
     
     required init?(coder aDecoder: NSCoder) {

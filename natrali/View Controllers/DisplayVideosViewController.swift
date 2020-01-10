@@ -95,13 +95,14 @@ class DisplayVideosViewController: UIViewController, UITableViewDelegate, UITabl
             let browProductOne:RecommendedProduct = RecommendedProduct(name: "ABH Brow Wiz", image: #imageLiteral(resourceName: "browWiz"), url: "https://www.ulta.com/brow-wiz?productId=xlsImpprod840088")
             let browProductTwo:RecommendedProduct = RecommendedProduct(name: "ABH Brow Powder", image: #imageLiteral(resourceName: "browPowderABH"), url: "https://www.ulta.com/brow-powder-duo?productId=VP12345")
             let browProducts = [browProductOne, browProductTwo]
+            
             let video = MyVideo(key: "cjdtysezq5w", title: "How to Fill in Your Eyebrows for Beginners", products: browProducts)
             videos.append(video)
             
-            let video2 = MyVideo(key: "cmhSam6L3lU", title: "Natural Looking Eyebrow Tutorial")
+            let video2 = MyVideo(key: "cmhSam6L3lU", title: "Natural Looking Eyebrow Tutorial", products: browProducts)
             videos.append(video2)
             
-            let video3 = MyVideo(key: "tsnwUG6glEU", title: "Brow Tips You Need to Know")
+            let video3 = MyVideo(key: "tsnwUG6glEU", title: "Brow Tips You Need to Know", products: browProducts)
             videos.append(video3)
             
         } else if self.category == "Lips" {
