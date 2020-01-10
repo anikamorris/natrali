@@ -13,7 +13,7 @@ class DisplayVideosViewController: UIViewController, UITableViewDelegate, UITabl
 
     var videos:[MyVideo] = []
     var category:String = ""
-    var video:MyVideo = MyVideo()
+    var video:MyVideo = MyVideo(key: "", title: "")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,7 +92,10 @@ class DisplayVideosViewController: UIViewController, UITableViewDelegate, UITabl
             
         } else if self.category == "Brows" {
             
-            let video = MyVideo(key: "cjdtysezq5w", title: "How to Fill in Your Eyebrows for Beginners")
+            let browProductOne:RecommendedProduct = RecommendedProduct(name: "ABH Brow Wiz", image: #imageLiteral(resourceName: "browWiz"), url: "https://www.ulta.com/brow-wiz?productId=xlsImpprod840088")
+            let browProductTwo:RecommendedProduct = RecommendedProduct(name: "ABH Brow Powder", image: #imageLiteral(resourceName: "browPowderABH"), url: "https://www.ulta.com/brow-powder-duo?productId=VP12345")
+            let browProducts = [browProductOne, browProductTwo]
+            let video = MyVideo(key: "cjdtysezq5w", title: "How to Fill in Your Eyebrows for Beginners", products: browProducts)
             videos.append(video)
             
             let video2 = MyVideo(key: "cmhSam6L3lU", title: "Natural Looking Eyebrow Tutorial")
@@ -119,5 +122,22 @@ class DisplayVideosViewController: UIViewController, UITableViewDelegate, UITabl
 struct MyVideo {
     var key:String = ""
     var title:String = ""
+    var products:[RecommendedProduct]?
     
+    init(key:String, title:String) {
+        self.key = key
+        self.title = title
+    }
+    
+    init(key:String, title:String, products:[RecommendedProduct]) {
+        self.key = key
+        self.title = title
+        self.products = products
+    }
+}
+
+struct RecommendedProduct {
+    var name: String
+    var image: UIImage
+    var url: String
 }

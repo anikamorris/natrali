@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CF2E2B2223C7B71B002A6251 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E2B2123C7B71B002A6251 /* CoreDataHelper.swift */; };
+		CF2E2B2423C826C2002A6251 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E2B2323C826C2002A6251 /* ProductCollectionViewCell.swift */; };
 		CFB023F023C4026300A151BB /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB023EF23C4026300A151BB /* CategoryTableViewCell.swift */; };
 		CFB023F423C403E800A151BB /* UIImage+downloaded.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB023F323C403E800A151BB /* UIImage+downloaded.swift */; };
 		CFB023F623C423A100A151BB /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB023F523C423A100A151BB /* CategoryTableViewController.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		CF2E2B2123C7B71B002A6251 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		CF2E2B2323C826C2002A6251 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		CFB023EF23C4026300A151BB /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		CFB023F323C403E800A151BB /* UIImage+downloaded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+downloaded.swift"; sourceTree = "<group>"; };
 		CFB023F523C423A100A151BB /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				CFD7E05723C3D1BF0018E30E /* VideoTableViewCell.swift */,
 				CFB023EF23C4026300A151BB /* CategoryTableViewCell.swift */,
+				CF2E2B2323C826C2002A6251 /* ProductCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			files = (
 				CF2E2B2223C7B71B002A6251 /* CoreDataHelper.swift in Sources */,
 				CFB023F423C403E800A151BB /* UIImage+downloaded.swift in Sources */,
+				CF2E2B2423C826C2002A6251 /* ProductCollectionViewCell.swift in Sources */,
 				CFD7E04523C3BCFB0018E30E /* DisplayVideosViewController.swift in Sources */,
 				CFD7E05C23C3FD280018E30E /* VideoViewController.swift in Sources */,
 				CFD7E05823C3D1BF0018E30E /* VideoTableViewCell.swift in Sources */,
