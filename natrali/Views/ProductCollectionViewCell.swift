@@ -15,6 +15,7 @@ class ProductCell: UICollectionViewCell {
         didSet {
             guard let product = product else { return }
             bg.image = product.image
+            titleLabel.text = product.name
         }
     }
     
@@ -22,15 +23,16 @@ class ProductCell: UICollectionViewCell {
         let productImage = UIImageView()
         productImage.image = #imageLiteral(resourceName: "browPowderABH")
         productImage.translatesAutoresizingMaskIntoConstraints = false
-        productImage.contentMode = .scaleAspectFill
+        productImage.contentMode = .scaleAspectFit
         productImage.clipsToBounds = true
         productImage.layer.cornerRadius = 12
         return productImage
     }()
     
     var titleLabel:UILabel = {
-        let label = UILabel(frame: CGRect(x:100, y: 30, width: UIScreen.main.bounds.width , height: 40))
-        label.textAlignment = .left
+        
+        let label = UILabel(frame: CGRect(x: 80, y: 230, width: 150, height: 40))
+        label.textAlignment = .center
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 0
         label.font = UIFont(name: "Futura", size: 17)
@@ -47,8 +49,10 @@ class ProductCell: UICollectionViewCell {
         bg.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -50).isActive = true
         
         self.addSubview(self.titleLabel)
-//        let constraints:NSLayoutConstraint = NSLayoutConstraint(item: <#T##Any#>, attribute: <#T##NSLayoutConstraint.Attribute#>, relatedBy: <#T##NSLayoutConstraint.Relation#>, toItem: <#T##Any?#>, attribute: <#T##NSLayoutConstraint.Attribute#>, multiplier: <#T##CGFloat#>, constant: <#T##CGFloat#>)
-//        self.titleLabel.addConstraints(<#T##constraints: [NSLayoutConstraint]##[NSLayoutConstraint]#>)
+//        self.titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 0).isActive = true
+//        self.titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
+//        self.titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
+//        self.titleLabel.heightAnchor.constraint(equalToConstant: 40)
     }
     
     required init?(coder aDecoder: NSCoder) {

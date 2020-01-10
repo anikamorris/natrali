@@ -39,6 +39,7 @@ class VideoViewController: UIViewController {
         productView.addSubview(collectionView)
     
         collectionView.backgroundColor = .white
+        
         collectionView.topAnchor.constraint(equalTo: productView.topAnchor, constant: 20).isActive = true
         collectionView.leadingAnchor.constraint(equalTo: productView.leadingAnchor, constant: 20).isActive = true
         collectionView.trailingAnchor.constraint(equalTo: productView.trailingAnchor, constant: -20).isActive = true
@@ -77,7 +78,6 @@ extension VideoViewController: UICollectionViewDelegateFlowLayout, UICollectionV
 
         guard let products = video.products else { return cell }
         cell.product = products[indexPath.row]
-        cell.titleLabel.text = cell.product!.name
         return cell
     }
     
